@@ -1,0 +1,100 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.container h1 {
+    font-size: 85px;
+    color: white;
+    animation: begin 2s;
+}
+
+@keyframes begin {
+    from {
+        transform: rotateX(90deg);
+    } to {
+        transform: rotateX(0deg);
+    }
+}
+
+.container-input {
+    background: rgba(255, 255, 255, .2);
+    padding: 16px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, .5);
+}
+
+.container-input input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    margin-right: 8px;
+}
+
+.container-input input::placeholder {
+    color: #F1F1F1
+}
+
+.search-btt {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.search-btt:hover {
+    transform: scale(1.2);
+}
+
+main {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: white;
+}
+
+main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 712px) {
+    .container h1 {
+        font-size: 60px;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    main {
+        width: 80%;
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 503px) {
+    .container h1 {
+        font-size: 40px;
+    }
+}
